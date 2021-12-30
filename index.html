@@ -12,7 +12,7 @@
     <main>
       <div class="container">
         <section id="form-container">
-          <form class="form">
+          <form class="form" onsubmit="return false">
             <div class="form-group">
               <label for="user_name">User Name</label>
               <input id="user_name" name="user_name" type="text" />
@@ -25,8 +25,11 @@
               <label for="api_secret">API Secret</label>
               <input id="api_secret" name="api_secret" type="text" />
             </div>
+            <div id="alert-box" class="alert alert-error">
+              <strong>Error:</strong> Please fill out the fileds.
+            </div>
             <div>
-              <button id="btn-submit" class="btn form-btn">Save</button>
+              <button id="btn-submit" class="btn form-btn">Submit</button>
             </div>
           </form>
         </section>
@@ -132,5 +135,6 @@
         </section>
       </div>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>
