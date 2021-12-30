@@ -124,3 +124,13 @@ th {
   padding: 0.3rem 0.5rem;
   background-color: #03a9f4;
 }
+.alert {
+  margin-bottom: 3rem;
+  background-color: #fab7b7;
+  padding: 1rem 0.5rem;
+  border-radius: 0.8rem;
+}
+.alert-error {
+  display: none;
+  visibility: hidden;
+}
